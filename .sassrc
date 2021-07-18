@@ -1,0 +1,4 @@
+{
+  includedPaths: ["node_modules"],
+  outputStyle: "nested"
+}

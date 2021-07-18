@@ -1,0 +1,50 @@
+[
+  {
+    "before": {
+      "image": "https://i.pravatar.cc/600?u=a1",
+      "alt_text": "before image"
+    },
+    "after": {
+      "image": "https://i.pravatar.cc/600?u=a2",
+      "alt_text": "after image"
+    },
+    "title": "Treated for rosacea",
+    "quote": "I love Skintap! I have noticed a major difference in my skin. My journey has been really easy",
+    "link": {
+      "text": "watch ben's story",
+      "url": "https://skintap.com"
+    }
+  },
+  {
+    "before": {
+      "image": "https://i.pravatar.cc/600?u=b1",
+      "alt_text": "before image"
+    },
+    "after": {
+      "image": "https://i.pravatar.cc/600?u=b2",
+      "alt_text": "after image"
+    },
+    "title": "Teated for acne",
+    "quote": "After just 3 months, I can see a major difference. Dr. Colombo and Skintap really changed my life and I am forever grateful",
+    "link": {
+      "text": "watch simone's story",
+      "url": "https://skintap.com"
+    }
+  },
+  {
+    "before": {
+      "image": "https://i.pravatar.cc/600?u=c1",
+      "alt_text": "before image"
+    },
+    "after": {
+      "image": "https://i.pravatar.cc/600?u=c2",
+      "alt_text": "after image"
+    },
+    "title": "treated for hyperpigmentation & anti-aging",
+    "quote": "I tried the other online providers but Skintap doctors really listened and it shows",
+    "link": {
+      "text": "watch beth's story",
+      "url": "https://skintap.com"
+    }
+  }
+]

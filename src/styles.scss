@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+}
+#reviews {
+  outline: 1px solid green;
+  display: block;
+  @media screen and (min-width: 768px){
+    display: flex;
+  }
+}
+.review_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 .5rem;
+  padding: 0 1rem;
+}
+.review_image {
+  width: 200px;
+  border-radius: 50%;
+}
+.review_content {
+  background-color: aquamarine;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
