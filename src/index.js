@@ -1,8 +1,12 @@
-import "./styles.scss";
-import reviews from "./data/reviews.json";
-import $ from "jquery";
-
-const rendered_reviews = reviews
+// import "./styles.scss";
+// import reviews from "./data/reviews.json";
+// import $ from "jquery";
+let reviews
+( async () => {
+  let response = await fetch("src/data/reviews.json");
+  let reviews = await response.json();
+  console.log(reviews)
+  const rendered_reviews = reviews
   .map((review) => {
     return `
   <div class="review_container">
@@ -27,3 +31,7 @@ const rendered_reviews = reviews
 document.getElementById("reviews").innerHTML = `
 ${rendered_reviews}
 `;
+  return reviews;
+})()
+
+

@@ -9,12 +9,13 @@
       type="text/css"
       media="screen"
     />
+    <link rel="stylesheet" href="src/css/main.css">
   </head>
 
   <body>
     <div id="app"></div>
     <div id="reviews"></div>
-    <!-- <script src="src/index.js" text=""></script> -->
+    <script src="src/index.js" text=""></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.js"
       integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
@@ -25,7 +26,9 @@
     <script type="text/javascript">
       var waitForJQuery = setInterval(function () {
         if (typeof $ != "undefined") {
-          //$(".twentytwenty-container").twentytwenty();
+          $(".twentytwenty-container").twentytwenty({
+            no_overlay: true
+          });
           clearInterval(waitForJQuery);
         }
       }, 10);
