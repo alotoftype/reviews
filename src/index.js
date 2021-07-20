@@ -1,11 +1,11 @@
 // import "./styles.scss";
 // import reviews from "./data/reviews.json";
 // import $ from "jquery";
-let reviews
-( async () => {
+var reviews
+(async () => {
   let response = await fetch("src/data/reviews.json");
-  let reviews = await response.json();
-  console.log(reviews)
+  reviews = await response.json();
+  console.log('reviews inside function', reviews)
   const rendered_reviews = reviews
   .map((review) => {
     return `
@@ -13,7 +13,6 @@ let reviews
     <div class="review_image twentytwenty-container">
   
         <img src="${review.before.image}" alt="${review.before.alt_text}"/>
-
         <img src="${review.after.image}" alt="${review.after.alt_text}" />
 
     </div>
@@ -28,10 +27,9 @@ let reviews
   `;
   })
   .join("");
-document.getElementById("reviews").innerHTML = `
+document.querySelector(".reviews_wrapper").innerHTML = `
 ${rendered_reviews}
 `;
   return reviews;
 })()
-
 

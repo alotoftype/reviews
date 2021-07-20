@@ -1,14 +1,18 @@
 body {
   font-family: sans-serif;
 }
-
-#reviews {
-  outline: 1px solid green;
+.reviews {
+  text-align: center;
+}
+.reviews_wrapper {
+  outline: 1px solid blue;
+  width: 100%;
   display: block;
 }
-@media screen and (min-width: 768px) {
-  #reviews {
+@media screen and (min-device-width: 768px) {
+  .reviews_wrapper {
     display: flex;
+    outline: none;
   }
 }
 
